@@ -1,0 +1,66 @@
+# iartlabs-infra/docker-compose.yml (sugerencia)
+# Levanta el ecosistema completo localmente.
+
+version: '3.8'
+
+services:
+  colmena:
+    build: ./Colmena
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+    volumes:
+      - ./memory:/app/memory
+    depends_on:
+      - ollama
+
+  inbeebox:
+    build: ./INBEEBOX
+    ports:
+      - "8002:8002"
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - colmena
+
+  kaizen:
+    build: ./kaizen-backend
+    ports:
+      - "8003:8003"
+    env_file:
+      - .env
+    depends_on:
+      - colmena
+
+  memo-desktop:
+    build: ./Memo-Desktop
+    ports:
+      - "8787:8787"
+    env_file:
+      - .env
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  thehive:
+    build: ./thehive-voice-mesh
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+
+volumes:
+  ollama-data:
