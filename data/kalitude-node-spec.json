@@ -48,8 +48,10 @@
     "qwen3-coder:480b-cloud"
   ],
   "connection": {
-    "tailscale_status": "logged_out",
-    "cluster_network": "not_joined"
+    "tailscale_status": "auth_url_generated",
+    "auth_url": "https://login.tailscale.com/a/1e04b248015ab8",
+    "cluster_network": "not_joined",
+    "pending_action": "owner must open auth URL in browser"
   },
   "alerts": [
     "Ollama necesita reinstalar/recompilar llama-server",
