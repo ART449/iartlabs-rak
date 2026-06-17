@@ -295,6 +295,28 @@ Resumen de 50 agentes: [`data/agents-summary.json`](data/agents-summary.json)
 
 ---
 
+## 9.1 Nodo kalitude — Última adquisición del cluster
+
+`kalitude` es el nodo más reciente del cluster IArtLabs. Laptop Dell Latitude E5530 con Kali Linux, asignada como **development-research-worker**.
+
+| Espec | Valor |
+|-------|-------|
+| CPU | Intel Core i5-3320M @ 2.60GHz (2C/4T) |
+| RAM | 11 GB |
+| Disco | 446 GB |
+| GPU | Intel HD Graphics 4000 |
+| OS | Kali GNU/Linux Rolling 2026.1 |
+| Rol | Desarrollo, investigación, RAK, CI/CD ligero |
+
+Capacidades declaradas: git-ops, GitHub automation, code analysis, documentation, CI/CD local runner, Docker validation, Python/Go/Node dev.
+
+Limitaciones: sin GPU discreta y RAM media. **No apto para entrenar modelos grandes**, pero ideal para orquestación, tests, documentación y gestión del ecosistema.
+
+Archivo detallado: [`docs/kalitude-node.md`](docs/kalitude-node.md)  
+Spec JSON: [`data/kalitude-node-spec.json`](data/kalitude-node-spec.json)
+
+---
+
 ## 10. Léxico propio
 
 | Término | Significado |
