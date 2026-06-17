@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IArtLabs Health Dashboard</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --ok:#238636; --fail:#da3633; --text:#c9d1d9; --muted:#8b949e; }
+  body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); margin:0; padding:2rem; }
+  h1 { margin-bottom:.5rem; }
+  .subtitle { color: var(--muted); margin-bottom:1.5rem; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem; }
+  .card { background: var(--card); border-radius: 12px; padding:1rem; border:1px solid #30363d; }
+  .card h3 { margin-top:0; font-size:1rem; }
+  .status { font-weight:bold; padding:.25rem .5rem; border-radius: 999px; display:inline-block; font-size:.85rem; }
+  .ok { background: rgba(35,134,54,.2); color: #3fb950; }
+  .fail { background: rgba(218,54,51,.2); color: #f85149; }
+  .unknown { background: rgba(139,148,158,.2); color: var(--muted); }
+  .detail { color: var(--muted); font-size:.85rem; margin-top:.5rem; }
+  #last-update { color: var(--muted); font-size:.8rem; margin-top:1rem; }
+  .error { color: var(--fail); font-size:.8rem; margin-top:.5rem; }
+</style>
+</head>
+<body>
+<h1>🐝 IArtLabs Health Dashboard</h1>
+<p class="subtitle">Monitor de servicios y repos del ecosistema IArtLabs</p>
+<div id="dashboard" class="grid"></div>
+<p id="last-update"></p>
+
+<script>
+const specUrl = 'dashboard-spec.json';
+
+async function checkHttp(name, url) {
+  const start = performance.now();
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(url, { mode: 'no-cors', signal: controller.signal });
+    clearTimeout(timeout);
+    return { ok: true, latency: Math.round(performance.now() - start), status: res.status || '?' };
+  } catch (e) {
+    return { ok: false, latency: Math.round(performance.now() - start), error: e.message };
+  }
+}
+
+async function loadRepos(owner, repos) {
+  // Sólo muestra enlaces; GitHub API requiere token para datos en tiempo real
+  return repos.map(r => `<a href="https://github.com/${owner}/${r}" target="_blank" style="color:#58a6ff">${r}</a>`).join(' · ');
+}
+
+async function render() {
+  const container = document.getElementById('dashboard');
+  container.innerHTML = '<div class="card"><h3>Cargando...</h3></div>';
+  try {
+    const res = await fetch(specUrl);
+    const spec = await res.json();
+    container.innerHTML = '';
+    for (const w of spec.widgets) {
+      const card = document.createElement('div');
+      card.className = 'card';
+      if (w.type === 'http_status') {
+        const result = await checkHttp(w.title, w.url);
+        const statusClass = result.ok ? 'ok' : 'fail';
+        const statusText = result.ok ? 'OK' : 'FAIL';
+        card.innerHTML = `<h3>${w.title}</h3>
+          <span class="status ${statusClass}">${statusText}</span>
+          <div class="detail">${w.url}<br>latencia: ${result.latency}ms</div>
+          ${result.error ? `<div class="error">${result.error}</div>` : ''}`;
+      } else if (w.type === 'github_repo') {
+        const links = await loadRepos(w.owner, w.repos);
+        card.innerHTML = `<h3>Repos GitHub</h3><div class="detail">${links}</div>`;
+      }
+      container.appendChild(card);
+    }
+    document.getElementById('last-update').textContent = 'Última actualización: ' + new Date().toLocaleString();
+  } catch (e) {
+    container.innerHTML = `<div class="card"><h3>Error</h3><div class="error">${e.message}</div></div>`;
+  }
+}
+
+render();
+setInterval(render, 60000);
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "title": "IArtLabs Health Dashboard",
+  "refresh_seconds": 60,
+  "widgets": [
+    {
+      "title": "ByFlow Producción",
+      "type": "http_status",
+      "url": "https://byflowapp.up.railway.app/",
+      "expected": 200
+    },
+    {
+      "title": "Colmena Producción",
+      "type": "http_status",
+      "url": "https://colmena-production-dd90.up.railway.app/health",
+      "expected": 200
+    },
+    {
+      "title": "Necuapahtli Agent Builder",
+      "type": "http_status",
+      "url": "http://100.119.50.26:3950/health",
+      "expected": 200
+    },
+    {
+      "title": "Arturo Nexus",
+      "type": "http_status",
+      "url": "http://100.119.50.26:3050/api/health",
+      "expected": 200
+    },
+    {
+      "title": "Memo Central",
+      "type": "http_status",
+      "url": "http://100.119.50.26:8400/health",
+      "expected": 200
+    },
+    {
+      "title": "Ollama",
+      "type": "http_status",
+      "url": "http://100.119.50.26:11434/api/tags",
+      "expected": 200
+    },
+    {
+      "title": "GitHub Repos",
+      "type": "github_repo",
+      "owner": "ART449",
+      "repos": [
+        "iartlabs-rak",
+        "VibeFlow_Pro",
+        "Colmena",
+        "beecode",
+        "kaizen-backend",
+        "GoEcosystem"
+      ]
+    }
+  ]
+}

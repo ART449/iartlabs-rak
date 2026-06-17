@@ -1,0 +1,128 @@
+docker compose config result:
+returncode: 0
+stdout:
+name: data
+services:
+  colmena:
+    build:
+      context: /home/kalitude/iartlabs-rak/Colmena
+      dockerfile: Dockerfile
+    depends_on:
+      ollama:
+        condition: service_started
+        required: true
+    environment:
+      DATABASE_URL: sqlite:///./test.db
+      OLLAMA_BASE_URL: http://localhost:11434
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8002
+        published: "8002"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /home/kalitude/iartlabs-rak/data/memory
+        target: /app/memory
+        bind:
+          create_host_path: true
+  inbeebox:
+    build:
+      context: /home/kalitude/iartlabs-rak/INBEEBOX
+      dockerfile: Dockerfile
+    depends_on:
+      colmena:
+        condition: service_started
+        required: true
+    environment:
+      DATABASE_URL: sqlite:///./test.db
+      OLLAMA_BASE_URL: http://localhost:11434
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8002
+        published: "8002"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+  kaizen:
+    build:
+      context: /home/kalitude/iartlabs-rak/kaizen-backend
+      dockerfile: Dockerfile
+    depends_on:
+      colmena:
+        condition: service_started
+        required: true
+    environment:
+      DATABASE_URL: sqlite:///./test.db
+      OLLAMA_BASE_URL: http://localhost:11434
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8003
+        published: "8003"
+        protocol: tcp
+  memo-desktop:
+    build:
+      context: /home/kalitude/iartlabs-rak/Memo-Desktop
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: sqlite:///./test.db
+      OLLAMA_BASE_URL: http://localhost:11434
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8787
+        published: "8787"
+        protocol: tcp
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu
+              driver: nvidia
+              count: 1
+    image: ollama/ollama
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 11434
+        published: "11434"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: ollama-data
+        target: /root/.ollama
+        volume: {}
+  thehive:
+    build:
+      context: /home/kalitude/iartlabs-rak/thehive-voice-mesh
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: sqlite:///./test.db
+      OLLAMA_BASE_URL: http://localhost:11434
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3000
+        published: "3000"
+        protocol: tcp
+networks:
+  default:
+    name: data_default
+volumes:
+  ollama-data:
+    name: data_ollama-data
+
+stderr:
+
