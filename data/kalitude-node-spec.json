@@ -34,5 +34,25 @@
     "11 GB RAM — no apto para entrenamiento de modelos grandes",
     "Ideal para desarrollo, builds ligeros, tests y orquestación"
   ],
-  "notes": "Nodo adquirido como ultima adquisicion del cluster IArtLabs. Mejor rendimiento que Mac del mismo año segun propietario."
+  "notes": "Nodo adquirido como ultima adquisicion del cluster IArtLabs. Mejor rendimiento que Mac del mismo año segun propietario.",
+  "software": {
+    "tailscale": "installed / logged out",
+    "ollama": "installed / broken (llama-server binary missing)",
+    "go": "1.26.4",
+    "node": "v24.15.0",
+    "docker": "28.5.2",
+    "gh_cli": "installed"
+  },
+  "models_downloaded": [
+    "gemma3:4b",
+    "qwen3-coder:480b-cloud"
+  ],
+  "connection": {
+    "tailscale_status": "logged_out",
+    "cluster_network": "not_joined"
+  },
+  "alerts": [
+    "Ollama necesita reinstalar/recompilar llama-server",
+    "Tailscale no ha iniciado sesión"
+  ]
 }

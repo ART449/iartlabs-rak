@@ -317,6 +317,34 @@ Spec JSON: [`data/kalitude-node-spec.json`](data/kalitude-node-spec.json)
 
 ---
 
+## 9.2 Estado de conexión al cluster
+
+| Servicio | Estado en kalitude | Acción necesaria |
+|----------|--------------------|------------------|
+| Tailscale | Instalado pero **logged out** | Iniciar sesión con `tailscale up` o invite link |
+| Ollama | Instalado pero **llama-server binary missing** | Reinstalar Ollama oficial o recompilar llama.cpp backend |
+| Docker | Instalado y funcional | Listo |
+| Git / gh | Instalados y autenticados | Listo |
+| Go 1.26.4 | Instalado | Listo |
+| Node v24.15.0 | Instalado | Listo |
+
+Para unir `kalitude` al cluster IArtLabs:
+
+```bash
+# 1. Tailscale
+sudo tailscale up --authkey=<TS-KEY> --hostname=kalitude
+
+# 2. Ollama (reinstalar backend completo)
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull gemma3:4b
+
+# 3. Verificar
+tailscale status
+ollama run gemma3:4b "hola"
+```
+
+---
+
 ## 10. Léxico propio
 
 | Término | Significado |
