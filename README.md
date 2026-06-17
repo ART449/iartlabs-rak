@@ -357,8 +357,8 @@ Tras el análisis del ecosistema, se detectaron los siguientes problemas y se cr
 
 | Problema | Activos creados | Estado |
 |----------|-----------------|--------|
-| READMEs faltantes en repos clave | READMEs para `Colmena`, `arturo-nexus`, `kaizen-backend`, `Memo-Desktop`, `VibeFlow_Pro` | ✅ Hecho (pendiente push) |
-| Sin CI/CD en repos ejecutables | Workflows para `beecode`, `kaizen-backend`, `GoEcosystem`, `mija-focus-overlay`, `myflow-studio-morph` | ✅ Hecho (pendiente push) |
+| READMEs faltantes en repos clave | READMEs para `Colmena`, `arturo-nexus`, `kaizen-backend`, `Memo-Desktop`, `VibeFlow_Pro` | ✅ Hecho y pusheado |
+| Sin CI/CD en repos ejecutables | Workflows para `beecode`, `kaizen-backend`, `GoEcosystem`, `mija-focus-overlay`, `myflow-studio-morph` | ✅ Hecho y pusheado |
 | Documentación operativa dispersa | Runbooks: deploy, backup, troubleshooting | ✅ Hecho |
 | Sin plan de consolidación | `docs/consolidation-plan.md` | ✅ Hecho |
 | Sin template de entorno unificado | `data/.env.example-template` | ✅ Hecho |
