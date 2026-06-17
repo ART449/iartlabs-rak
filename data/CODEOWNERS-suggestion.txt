@@ -1,0 +1,30 @@
+# CODEOWNERS sugeridos para el ecosistema IArtLabs
+# Generado automáticamente por el agente IArtLabs
+
+# RAK central
+* @ART449
+
+# Sistema operativo y orquestación
+Colmena/ @ART449
+arturo-nexus/ @ART449
+kaizen-backend/ @ART449
+INBEEBOX/ @ART449
+
+# Asistentes y voz
+Memo-Desktop/ @ART449
+thehive-voice-mesh/ @ART449
+myflow-studio-morph/ @ART449
+
+# Producto comercial
+byflow/ @ART449
+byflow-consolidado/ @ART449
+VibeFlow_Pro/ @ART449
+
+# Herramientas de desarrollo
+beecode/ @ART449
+GoEcosystem/ @ART449
+mija-focus-overlay/ @ART449
+
+# Master Plan y governance
+IArtLabs-Master/ @ART449
+colmena-control/ @ART449

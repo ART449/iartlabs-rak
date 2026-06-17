@@ -1,0 +1,452 @@
+[
+  {
+    "id": "google-flow",
+    "name": "Google Flow",
+    "emoji": "🌐",
+    "layer": "produccion",
+    "tier": "free",
+    "role": "Google Ecosystem Integration & Pipelines",
+    "room": "production"
+  },
+  {
+    "id": "agybee",
+    "name": "AGYBEE",
+    "emoji": "🐝",
+    "layer": "seguridad",
+    "tier": "enterprise",
+    "role": "System Integration & Security",
+    "room": "security"
+  },
+  {
+    "id": "robot-dj",
+    "name": "ROBOT DJ",
+    "emoji": "🎧",
+    "layer": "produccion",
+    "tier": "free",
+    "role": "Marketing & Content",
+    "room": "creative"
+  },
+  {
+    "id": "michi",
+    "name": "MICHI",
+    "emoji": "🐱",
+    "layer": "produccion",
+    "tier": "starter",
+    "role": "Legal & Docs",
+    "room": "dev-b"
+  },
+  {
+    "id": "gflow",
+    "name": "GFLOW",
+    "emoji": "💰",
+    "layer": "produccion",
+    "tier": "starter",
+    "role": "Finance & Analysis",
+    "room": "dev-a"
+  },
+  {
+    "id": "clip-flow",
+    "name": "CLIP FLOW",
+    "emoji": "📚",
+    "layer": "produccion",
+    "tier": "free",
+    "role": "Education & Training",
+    "room": "dev-b"
+  },
+  {
+    "id": "bolita",
+    "name": "BOLITA DJ",
+    "emoji": "💛",
+    "layer": "produccion",
+    "tier": "free",
+    "role": "Wellness & Health",
+    "room": "cafe"
+  },
+  {
+    "id": "nexo",
+    "name": "NEXO",
+    "emoji": "🎵",
+    "layer": "maquinacion",
+    "tier": "starter",
+    "role": "Orquestador",
+    "room": "war"
+  },
+  {
+    "id": "estructura",
+    "name": "ESTRUCTURA",
+    "emoji": "🏗️",
+    "layer": "maquinacion",
+    "tier": "starter",
+    "role": "Arquitecto",
+    "room": "war"
+  },
+  {
+    "id": "forja",
+    "name": "FORJA",
+    "emoji": "🔨",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Compilador/Ejecutor",
+    "room": "server"
+  },
+  {
+    "id": "refactor-safe",
+    "name": "REFACTOR",
+    "emoji": "🧹",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Kaizen Seguro",
+    "room": "dev-a"
+  },
+  {
+    "id": "boveda",
+    "name": "BOVEDA",
+    "emoji": "🛡️",
+    "layer": "maquinacion",
+    "tier": "enterprise",
+    "role": "Infra/DevOps/Sandbox",
+    "room": "server"
+  },
+  {
+    "id": "crew-chief",
+    "name": "CREW CHIEF",
+    "emoji": "🧭",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Python/CrewAI Migration Conductor",
+    "room": "war"
+  },
+  {
+    "id": "architect",
+    "name": "ARCHITECT",
+    "emoji": "🏛️",
+    "layer": "desarrollo",
+    "tier": "starter",
+    "role": "System Design",
+    "room": "war"
+  },
+  {
+    "id": "planner",
+    "name": "PLANNER",
+    "emoji": "📝",
+    "layer": "desarrollo",
+    "tier": "starter",
+    "role": "Implementation Planning",
+    "room": "war"
+  },
+  {
+    "id": "code-reviewer",
+    "name": "CODE REVIEW",
+    "emoji": "🔍",
+    "layer": "desarrollo",
+    "tier": "starter",
+    "role": "Code Quality",
+    "room": "dev-a"
+  },
+  {
+    "id": "security-reviewer",
+    "name": "SECURITY",
+    "emoji": "🔒",
+    "layer": "seguridad",
+    "tier": "pro",
+    "role": "Vulnerability Detection",
+    "room": "server"
+  },
+  {
+    "id": "build-resolver",
+    "name": "BUILD FIX",
+    "emoji": "🛠️",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Build Error Resolution",
+    "room": "dev-a"
+  },
+  {
+    "id": "tdd-guide",
+    "name": "TDD GUIDE",
+    "emoji": "✅",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Test-Driven Development",
+    "room": "dev-b"
+  },
+  {
+    "id": "e2e-runner",
+    "name": "E2E RUNNER",
+    "emoji": "🎭",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "End-to-End Testing",
+    "room": "dev-b"
+  },
+  {
+    "id": "refactor-cleaner",
+    "name": "REFACTOR",
+    "emoji": "🧹",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Dead Code Cleanup",
+    "room": "dev-a"
+  },
+  {
+    "id": "doc-updater",
+    "name": "DOC UPDATER",
+    "emoji": "📖",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Documentation & Codemaps",
+    "room": "creative"
+  },
+  {
+    "id": "database-reviewer",
+    "name": "DB REVIEW",
+    "emoji": "🗄️",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Database & SQL",
+    "room": "server"
+  },
+  {
+    "id": "chief-of-staff",
+    "name": "CHIEF STAFF",
+    "emoji": "📧",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Communication Manager",
+    "room": "creative"
+  },
+  {
+    "id": "loop-operator",
+    "name": "LOOP OPS",
+    "emoji": "🔄",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Autonomous Loop Manager",
+    "room": "war"
+  },
+  {
+    "id": "harness-optimizer",
+    "name": "HARNESS",
+    "emoji": "⚙️",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Agent Harness Optimization",
+    "room": "server"
+  },
+  {
+    "id": "python-reviewer",
+    "name": "PY REVIEW",
+    "emoji": "🐍",
+    "layer": "especialistas",
+    "tier": "pro",
+    "role": "Python Code Review",
+    "room": "dev-b"
+  },
+  {
+    "id": "docs-lookup",
+    "name": "DOCS LOOKUP",
+    "emoji": "📚",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Documentation Search",
+    "room": "creative"
+  },
+  {
+    "id": "gsd-executor",
+    "name": "GSD EXEC",
+    "emoji": "🚀",
+    "layer": "gsd",
+    "tier": "enterprise",
+    "role": "Plan Executor",
+    "room": "war"
+  },
+  {
+    "id": "gsd-debugger",
+    "name": "GSD DEBUG",
+    "emoji": "🔬",
+    "layer": "gsd",
+    "tier": "enterprise",
+    "role": "Scientific Debugger",
+    "room": "dev-a"
+  },
+  {
+    "id": "gsd-planner",
+    "name": "GSD PLAN",
+    "emoji": "📊",
+    "layer": "gsd",
+    "tier": "enterprise",
+    "role": "Phase Planner",
+    "room": "war"
+  },
+  {
+    "id": "gsd-verifier",
+    "name": "GSD VERIFY",
+    "emoji": "🏁",
+    "layer": "gsd",
+    "tier": "enterprise",
+    "role": "Phase Verifier",
+    "room": "dev-b"
+  },
+  {
+    "id": "halcon",
+    "name": "HALCON",
+    "emoji": "🦅",
+    "layer": "seguridad",
+    "tier": "enterprise",
+    "role": "OSINT/Recon",
+    "room": "server"
+  },
+  {
+    "id": "armpix",
+    "name": "ARMPIX",
+    "emoji": "🛡️",
+    "layer": "seguridad",
+    "tier": "enterprise",
+    "role": "IPS/Defensa Activa",
+    "room": "server"
+  },
+  {
+    "id": "sincro",
+    "name": "SINCRO",
+    "emoji": "🔗",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Middleware/Orchestration",
+    "room": "war"
+  },
+  {
+    "id": "oraculo",
+    "name": "ORACULO",
+    "emoji": "🔮",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Analytics/Predictions",
+    "room": "dev-a"
+  },
+  {
+    "id": "custodio",
+    "name": "CUSTODIO",
+    "emoji": "📝",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "QA/Testing Manual",
+    "room": "dev-b"
+  },
+  {
+    "id": "mercurio",
+    "name": "MERCURIO",
+    "emoji": "⚡",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "API Gateway/Cache",
+    "room": "server"
+  },
+  {
+    "id": "kronos",
+    "name": "KRONOS",
+    "emoji": "⏰",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Scheduler/Cron",
+    "room": "war"
+  },
+  {
+    "id": "fenix",
+    "name": "FENIX",
+    "emoji": "🔥",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Recovery/Backup",
+    "room": "server"
+  },
+  {
+    "id": "atlas",
+    "name": "ATLAS",
+    "emoji": "🗺️",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Docs/Wiki Maintainer",
+    "room": "creative"
+  },
+  {
+    "id": "vortex",
+    "name": "VORTEX",
+    "emoji": "🌀",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Data Pipeline/ETL",
+    "room": "dev-a"
+  },
+  {
+    "id": "centinela",
+    "name": "CENTINELA",
+    "emoji": "👁️",
+    "layer": "seguridad",
+    "tier": "enterprise",
+    "role": "Monitor 24/7",
+    "room": "server"
+  },
+  {
+    "id": "nebula",
+    "name": "NEBULA",
+    "emoji": "🌌",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "ML/Model Training",
+    "room": "dev-b"
+  },
+  {
+    "id": "titan",
+    "name": "TITAN",
+    "emoji": "💪",
+    "layer": "maquinacion",
+    "tier": "enterprise",
+    "role": "Heavy Compute/GPU",
+    "room": "server"
+  },
+  {
+    "id": "eco",
+    "name": "ECO",
+    "emoji": "🌿",
+    "layer": "maquinacion",
+    "tier": "pro",
+    "role": "Cost Optimizer",
+    "room": "war"
+  },
+  {
+    "id": "pixel",
+    "name": "PIXEL",
+    "emoji": "🎨",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "UI/UX Design",
+    "room": "creative"
+  },
+  {
+    "id": "dharma",
+    "name": "DHARMA",
+    "emoji": "⚖️",
+    "layer": "seguridad",
+    "tier": "enterprise",
+    "role": "Compliance/GDPR",
+    "room": "dev-b"
+  },
+  {
+    "id": "pulsar",
+    "name": "PULSAR",
+    "emoji": "📡",
+    "layer": "desarrollo",
+    "tier": "pro",
+    "role": "Notifications/Push",
+    "room": "creative"
+  },
+  {
+    "id": "cipher",
+    "name": "CIPHER",
+    "emoji": "🔐",
+    "layer": "seguridad",
+    "tier": "enterprise",
+    "role": "Encryption/Keys",
+    "room": "server"
+  }
+]

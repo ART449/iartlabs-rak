@@ -1,0 +1,44 @@
+{
+  "servicios": [
+    {
+      "nombre": "Necuapahtli Agent Builder",
+      "host": "100.119.50.26",
+      "puerto": 3950,
+      "ruta": "/health"
+    },
+    {
+      "nombre": "Arturo Nexus",
+      "host": "100.119.50.26",
+      "puerto": 3050,
+      "ruta": "/api/health"
+    },
+    {
+      "nombre": "Memo Central",
+      "host": "100.119.50.26",
+      "puerto": 8400,
+      "ruta": "/health"
+    },
+    {
+      "nombre": "The Hype",
+      "host": "100.119.50.26",
+      "puerto": 3333,
+      "ruta": "/"
+    },
+    {
+      "nombre": "Ollama",
+      "host": "100.119.50.26",
+      "puerto": 11434,
+      "ruta": "/api/tags"
+    },
+    {
+      "nombre": "ByFlow Producción",
+      "url": "https://byflowapp.up.railway.app",
+      "ruta": "/"
+    },
+    {
+      "nombre": "Colmena Producción",
+      "url": "https://colmena-production-dd90.up.railway.app",
+      "ruta": "/health"
+    }
+  ]
+}

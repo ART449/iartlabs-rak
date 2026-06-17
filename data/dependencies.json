@@ -1,0 +1,61 @@
+{
+  "Colmena": [
+    "IArtLabs-Master",
+    "INBEEBOX",
+    "VibeFlow_Pro",
+    "arturo-nexus",
+    "byflow"
+  ],
+  "GoEcosystem": [
+    "Colmena"
+  ],
+  "IArtLabs-Master": [
+    "Colmena",
+    "VibeFlow_Pro",
+    "byflow"
+  ],
+  "INBEEBOX": [
+    "Colmena"
+  ],
+  "Memo-Desktop": [
+    "Colmena",
+    "byflow"
+  ],
+  "VibeFlow_Pro": [
+    "Colmena",
+    "beecode",
+    "byflow"
+  ],
+  "arturo-nexus": [
+    "Colmena",
+    "VibeFlow_Pro",
+    "byflow"
+  ],
+  "beecode": [
+    "Colmena"
+  ],
+  "byflow": [],
+  "byflow-consolidado": [
+    "Colmena",
+    "byflow"
+  ],
+  "colmena-control": [
+    "Colmena",
+    "GoEcosystem",
+    "VibeFlow_Pro",
+    "byflow"
+  ],
+  "kaizen-backend": [
+    "Colmena"
+  ],
+  "mija-focus-overlay": [
+    "Colmena"
+  ],
+  "myflow-studio-morph": [
+    "Colmena",
+    "byflow"
+  ],
+  "thehive-voice-mesh": [
+    "Colmena"
+  ]
+}
