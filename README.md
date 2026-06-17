@@ -345,6 +345,24 @@ ollama run gemma3:4b "hola"
 
 ---
 
+## 9.3 Topología actual del cluster (Tailnet `tail40ab99.ts.net`)
+
+| Dispositivo | OS | Tailscale IP | Rol | Estado |
+|-------------|-----|--------------|-----|--------|
+| `necuapahtli` | Linux 6.8 | `100.119.50.26` | Nodo principal Colmena | ✅ activo |
+| `kalimac` | Kali 6.18 | `100.84.241.7` | Mac del mismo año (legacy dev) | ✅ activo |
+| `debian` | Linux 6.12 | `100.85.204.52` | Nodo Linux | ⚠️ última vez visto 2026-06-12 |
+| `victusart` | Windows 10 | `100.95.85.107` | Victus workstation | ✅ activo |
+| `armor-26-ultra` | Android 13 | `100.109.42.40` | Móvil | ✅ activo |
+| `pixel-10-pro-xl` | Android 16 | `100.80.182.37` | Móvil | ✅ activo |
+| `kalitude` | Kali 6.18 | pendiente | **Nuevo dev/research worker** | ⏳ esperando auth |
+
+**IP clave del cluster:** `necuapahtli = 100.119.50.26`. Ahí viven los servicios que el dashboard monitorea.
+
+Archivo: [`data/tailnet-cluster-topology.json`](data/tailnet-cluster-topology.json)
+
+---
+
 ## 10. Léxico propio
 
 | Término | Significado |

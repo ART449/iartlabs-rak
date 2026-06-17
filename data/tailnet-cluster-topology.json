@@ -1,0 +1,84 @@
+{
+  "tailnet": "tail40ab99.ts.net",
+  "owner_email": "elricondelgeekdearturo@gmail.com",
+  "generated_at": "2026-06-17",
+  "nodes": [
+    {
+      "name": "necuapahtli",
+      "device_id": "nX6v5QKS5v11CNTRL",
+      "os": "linux",
+      "os_version": "6.8.0-117-generic",
+      "tailscale_ip": "100.119.50.26",
+      "tailscale_ipv6": "fd7a:115c:a1e0::d733:321a",
+      "role": "colmena-core",
+      "tailscale_ssh": true,
+      "status": "active"
+    },
+    {
+      "name": "kalimac",
+      "device_id": "n1hZYNkuTZ11CNTRL",
+      "os": "linux",
+      "os_version": "6.18.12+kali-amd64",
+      "tailscale_ip": "100.84.241.7",
+      "tailscale_ipv6": "fd7a:115c:a1e0::ce33:f107",
+      "role": "legacy-development-node",
+      "tailscale_ssh": true,
+      "status": "active"
+    },
+    {
+      "name": "debian",
+      "device_id": "nSWgf8ViDS11CNTRL",
+      "os": "linux",
+      "os_version": "6.12.60-android16-6-g54e1389bda83-ab14631638-4k",
+      "tailscale_ip": "100.85.204.52",
+      "tailscale_ipv6": "fd7a:115c:a1e0::5c33:cc35",
+      "role": "unknown",
+      "tailscale_ssh": false,
+      "status": "last_seen_2026-06-12"
+    },
+    {
+      "name": "victusart",
+      "device_id": "ne1Wzp21Ci11CNTRL",
+      "os": "windows",
+      "os_version": "10.0.26200.8655",
+      "tailscale_ip": "100.95.85.107",
+      "tailscale_ipv6": "fd7a:115c:a1e0::ee01:55af",
+      "role": "windows-workstation",
+      "tailscale_ssh": false,
+      "status": "active"
+    },
+    {
+      "name": "armor-26-ultra",
+      "device_id": "nEYXE3TQPr11CNTRL",
+      "os": "android",
+      "os_version": "13",
+      "tailscale_ip": "100.109.42.40",
+      "tailscale_ipv6": "fd7a:115c:a1e0::a801:2ac0",
+      "role": "mobile",
+      "tailscale_ssh": false,
+      "status": "active"
+    },
+    {
+      "name": "pixel-10-pro-xl",
+      "device_id": "nrS6gNvVwM11CNTRL",
+      "os": "android",
+      "os_version": "16",
+      "tailscale_ip": "100.80.182.37",
+      "tailscale_ipv6": "fd7a:115c:a1e0::c201:b6a1",
+      "role": "mobile",
+      "tailscale_ssh": false,
+      "status": "active"
+    },
+    {
+      "name": "kalitude",
+      "device_id": "pending",
+      "os": "linux",
+      "os_version": "6.18.12+kali-amd64",
+      "tailscale_ip": "pending",
+      "tailscale_ipv6": "pending",
+      "role": "development-research-worker",
+      "tailscale_ssh": false,
+      "status": "awaiting_tailscale_auth"
+    }
+  ]
+}
