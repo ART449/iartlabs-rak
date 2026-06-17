@@ -321,7 +321,7 @@ Spec JSON: [`data/kalitude-node-spec.json`](data/kalitude-node-spec.json)
 
 | Servicio | Estado en kalitude | Acción necesaria |
 |----------|--------------------|------------------|
-| Tailscale | **Auth URL generado** | Owner debe abrir: https://login.tailscale.com/a/1e04b248015ab8 |
+| Tailscale | **Auth URL generado** | Owner debe abrir: https://login.tailscale.com/a/14a5fb8a013236 (URL anterior expiró, se regeneró) |
 | Ollama | Instalado pero **llama-server binary missing** | Reinstalar Ollama oficial o recompilar llama.cpp backend |
 | Docker | Instalado y funcional | Listo |
 | Git / gh | Instalados y autenticados | Listo |
